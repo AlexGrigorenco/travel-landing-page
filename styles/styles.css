@@ -131,6 +131,7 @@ a:hover,
 }
 
 .menu-icon-wrapper {
+  cursor: pointer;
   padding: 5px;
   width: calc(var(--menu_mobile_length) + 10px);
   height: calc(var(--menu_mobile_length) + 15px);

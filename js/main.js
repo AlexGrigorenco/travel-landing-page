@@ -123,7 +123,19 @@ const body = document.querySelector('body');
 
 
 document.querySelector('.menu-icon-wrapper').onclick = function(){
+  toggleMenuMobile()
+
+  menuWrapper.querySelectorAll('a').forEach(el => {
+    el.addEventListener('click', () => {
+      if(document.querySelector('.menu-icon-active')){
+        toggleMenuMobile()
+      }
+    })
+  })
+}
+
+function toggleMenuMobile() {
   document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
   menuWrapper.classList.toggle('menu__wrapper-active');
-  body.classList.toggle('no-scroll')
+  body.classList.toggle('no-scroll');
 }
