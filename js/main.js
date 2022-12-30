@@ -139,3 +139,81 @@ function toggleMenuMobile() {
   menuWrapper.classList.toggle('menu__wrapper-active');
   body.classList.toggle('no-scroll');
 }
+
+
+
+//   *              OUR PHILOSOPHY 
+
+const ourPhilosophyContent = [
+  {
+    title: 'Sustainable',
+    number: '01',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam, ac tristique dolor. Aliquam nulla risus,',
+  },
+  {
+    title: 'Fair & Share',
+    number: '02',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam,',
+  },
+  {
+    title: 'Experience',
+    number: '03',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et nisl hendrerit, aliquet mi sed, scelerisque tortor. Aliquam eu scelerisque quam, ac tristique',
+  },
+]
+
+document.querySelector('.philosophy__content__items').innerHTML = ourPhilosophyContent.map(item => `
+              <div class="philosophy__content__item">
+                  <div class="philosophy__content__num">
+                    <p>${item.number}</p>
+                  </div>
+                  <div class="philosophy__content">
+                    <h3 class="philosophy__content__title">${item.title}</h3>
+                    <p class="philosophy__content__text">${item.text}
+                    </p>
+                  </div>
+               </div>
+`).join('')
+
+
+//*              OUR PARTNERS
+
+const ourPartnersContent = [
+  {
+    text: 'Lorem ipsum dolor sit amet, consectetur adipis. consectetur adipiscing elit. nibh lectus feugiat nunc',
+    img: './images/partners/jane-cooper.png',
+    name: 'Jane Cooper',
+    jobTitle: 'CEO, ABC Corporation',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.  consectetur adipiscing elit.',
+    img: './images/partners/alan-jackson.png',
+    name: 'Alan Jackson',
+    jobTitle: 'CEO, Travelers Community',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat. ipsum dolor  sit amet, consectetur adipiscing elit.',
+    img: './images/partners/james-anderson.png',
+    name: 'James Anderson',
+    jobTitle: 'CEO, Go Travel',
+  },
+]
+
+document.querySelector('.partners__rewiev__wrapper').innerHTML = ourPartnersContent.map(item => `
+      <div class="partners__rewiev__item">
+            <div class="text__wrapper">
+              <p>
+                ${item.text}
+              </p>
+            </div>
+            <div class="partners__rewiev__info">
+              <div class="partners__rewiev__photo">
+                <img src=${item.img} alt="photo" />
+              </div>
+              <div class="partner__info">
+                <p class="partner__name">${item.name}</p>
+                <p class="partner__post">${item.jobTitle}</p>
+              </div>
+            </div>
+      </div>
+`)
