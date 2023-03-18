@@ -21,10 +21,15 @@
   border-radius: 20px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   font-family: "Montserrat", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 img {

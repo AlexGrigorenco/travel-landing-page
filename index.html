@@ -7,11 +7,12 @@
     <title>Travel Landing Page</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/animate.min.css">
+    <link rel="stylesheet" href="./WOWanimate/animate.css">
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
   </head>
   <body>
-    <nav class="menu__top">
+    <nav class="menu__top wow animate__slideInDown" data-wow-duration="1.5s">
       <div class="nav--container">
         <div class="menu__wrapper">
           <div class="logo__wrapper">
@@ -21,10 +22,10 @@
             <a href="#" class="logo"> TRAVELx </a>
           </div>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#"> Destinations </a></li>
-            <li class="nav__item"><a href="#"> Activities </a></li>
-            <li class="nav__item"><a href="#"> About Us </a></li>
-            <li class="nav__item"><a href="#"> Contact </a></li>
+            <li class="nav__item"><a href="#destinations"> Destinations </a></li>
+            <li class="nav__item"><a href="#activities"> Activities </a></li>
+            <li class="nav__item"><a href="#aboutUs"> About Us </a></li>
+            <li class="nav__item"><a href="#contacts"> Contact </a></li>
           </ul>
           <div class="menu-icon-wrapper">
             <div class="menu-icon"></div>
@@ -75,7 +76,7 @@
               <div class="slider__nav__dot__element"></div>
             </li>
           </ul>
-          <div class="header__title__wrapper">
+          <div class="header__title__wrapper wow animate__zoomIn" data-wow-duration="2s">
             <p class="header__subtitle">EXPLORE</p>
             <h1 class="header__title">Norway</h1>
           </div>
@@ -111,15 +112,15 @@
               </button>
             </div>
             <div class="map__marker__wrapper">
-              <button class="map__marker">
+              <button class="map__marker wow animate__fadeInUp"  data-wow-duration="1s">
                 <span class="map__marker__location"> Trondheim </span>
                 <span class="map__marker__plan"> Plan a trip </span>
               </button>
-              <button class="map__marker">
+              <button class="map__marker wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
                 <span class="map__marker__location"> Geirangerfjord </span>
                 <span class="map__marker__plan"> Plan a trip </span>
               </button>
-              <button class="map__marker">
+              <button class="map__marker wow animate__fadeInUp" data-wow-duration="5s"  data-wow-delay="1s">
                 <span class="map__marker__location"> Lofoten </span>
                 <span class="map__marker__plan"> Plan a trip </span>
               </button>
@@ -135,95 +136,15 @@
     </header>
 
     <main>
-      <section class="activities">
-        <div class="activities__title__wrapper">
+      <section id="activities" class="activities">
+        <div class="activities__title__wrapper wow animate__backInUp" data-wow-duration="1.5s">
           <p class="activities__subtitle">HUNDREDS OF</p>
           <h2 class="activities__title">Activities for Everyoune</h2>
         </div>
         <div class="container">
-          <div class="activities__slider__wrapper">
+          <div class="activities__slider__wrapper wow animate__slideInRight" data-wow-delay="1s">
             <div class="actitvities__slider">
-              <div class="activities__slider__item">
-                <img
-                  src="./images/activities/slider-img-1.png"
-                  alt="slider image"
-                />
-                <div class="activities__slider__item__info__wrapper">
-                  <p class="slider__item__event">Hiking</p>
-                  <p class="slider__item__amount__activities">230 activites</p>
-                </div>
-              </div>
-              <div class="activities__slider__item">
-                <img
-                  src="./images/activities/slider-img-2.png"
-                  alt="slider image"
-                />
-                <div class="activities__slider__item__info__wrapper">
-                  <p class="slider__item__event">Sailing</p>
-                  <p class="slider__item__amount__activities">121 activites</p>
-                </div>
-              </div>
-              <div class="activities__slider__item">
-                <img
-                  src="./images/activities/slider-img-3.png"
-                  alt="slider image"
-                />
-                <div class="activities__slider__item__info__wrapper">
-                  <p class="slider__item__event">Skiing</p>
-                  <p class="slider__item__amount__activities">212 activites</p>
-                </div>
-              </div>
-              <div class="activities__slider__item">
-                <img
-                  src="./images/activities/slider-img-4.png"
-                  alt="slider image"
-                />
-                <div class="activities__slider__item__info__wrapper">
-                  <p class="slider__item__event">Kayaking</p>
-                  <p class="slider__item__amount__activities">512 activites</p>
-                </div>
-              </div>
-  
-              <div class="activities__slider__item">
-                <img
-                  src="./images/activities/slider-img-5.png"
-                  alt="slider image"
-                />
-                <div class="activities__slider__item__info__wrapper">
-                  <p class="slider__item__event">Hiking</p>
-                  <p class="slider__item__amount__activities">230 activites</p>
-                </div>
-              </div>
-              <div class="activities__slider__item">
-                <img
-                  src="./images/activities/slider-img-6.png"
-                  alt="slider image"
-                />
-                <div class="activities__slider__item__info__wrapper">
-                  <p class="slider__item__event">Sailing</p>
-                  <p class="slider__item__amount__activities">121 activites</p>
-                </div>
-              </div>
-              <div class="activities__slider__item">
-                <img
-                  src="./images/activities/slider-img-7.png"
-                  alt="slider image"
-                />
-                <div class="activities__slider__item__info__wrapper">
-                  <p class="slider__item__event">Skiing</p>
-                  <p class="slider__item__amount__activities">212 activites</p>
-                </div>
-              </div>
-              <div class="activities__slider__item">
-                <img
-                  src="./images/activities/slider-img-8.png"
-                  alt="slider image"
-                />
-                <div class="activities__slider__item__info__wrapper">
-                  <p class="slider__item__event">Kayaking</p>
-                  <p class="slider__item__amount__activities">512 activites</p>
-                </div>
-              </div>
+              
             </div>
             <div
                 class="activities__bttn__wrapper activities__bttn__wrapper-prev owl-prev"
@@ -264,14 +185,14 @@
           </div>
         </div>
       </section>
-      <section class="philosophy">
+      <section id="aboutUs" class="philosophy">
         <div class="container">
-          <div class="philosophy__title__wrapper">
+          <div class="philosophy__title__wrapper wow animate__backInUp" data-wow-duration="1.5s">
             <p class="philosophy__subtitle">About Us</p>
             <h2 class="philosophy__title">Our Philosophy</h2>
           </div>
           <div class="philosophy__wrapper">
-            <div class="philosophy__image__wrapper">
+            <div class="philosophy__image__wrapper wow animate__slideInLeft" data-wow-duration="2s">
               <img src="./images/philosophy/img-1.png" alt="image" />
             </div>
             <div class="philosophy__content__wrapper">
@@ -282,46 +203,17 @@
           </div>
         </div>
       </section>
-      <section class="hotels">
+      <section id="destinations" class="hotels">
         <div class="hotels__background__grey"></div>
         <div class="container">
-          <div class="title__wrapper">
+          <div class="title__wrapper wow animate__backInUp" data-wow-duration="1.5s">
             <p class="subtitle">BEAUTIES</p>
             <h2>Hotels and Appartements</h2>
           </div>
           <div class="hotels__content__wrapper">
-            <div class="hotels__item">
-              <div class="hotels__item__img__wrapper">
-                <img src="./images/hotels/reine-img.png" alt="image" />
-              </div>
-              <div class="hotels__location__wrapper">
-                <h3 class="hotels__location">Reine</h3>
-                <img src="./images/hotels/Star-5.svg" alt="rating" />
-              </div>
-              <p class="hotels__price">$720</p>
-            </div>
-            <div class="hotels__item">
-              <div class="hotels__item__img__wrapper">
-                <img src="./images/hotels/nofway-img.png" alt="image" />
-              </div>
-              <div class="hotels__location__wrapper">
-                <h3 class="hotels__location">Norway</h3>
-                <img src="./images/hotels/Star-4.svg" alt="rating" />
-              </div>
-              <p class="hotels__price">$350</p>
-            </div>
-            <div class="hotels__item">
-              <div class="hotels__item__img__wrapper">
-                <img src="./images/hotels/bergen-img.png" alt="image" />
-              </div>
-              <div class="hotels__location__wrapper">
-                <h3 class="hotels__location">Bergen</h3>
-                <img src="./images/hotels/Star-4-5.svg" alt="rating" />
-              </div>
-              <p class="hotels__price">$670</p>
-            </div>
+            
           </div>
-          <div class="hotels__form__wrapper">
+          <div class="hotels__form__wrapper wow animate__slideInRight">
             <form action="#">
               <div class="select__wrapper">
                 <div class="select__item">
@@ -394,8 +286,8 @@
         </div>
       </section>
     </main>
-    <footer class="">
-      <div class="container">
+    <footer>
+      <div class="container wow animate__zoomIn">
         <div class="footer__logo__wrapper">
           <a href="#">
             <div class="footer__logo__img__wrapper">
@@ -406,14 +298,14 @@
         </div>
         <div class="footer__nav__list__wrapper">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#"> Destinations </a></li>
-            <li class="nav__item"><a href="#"> Activities </a></li>
-            <li class="nav__item"><a href="#"> About Us </a></li>
-            <li class="nav__item"><a href="#"> Contact </a></li>
+            <li class="nav__item"><a href="#destinations"> Destinations </a></li>
+            <li class="nav__item"><a href="#activities"> Activities </a></li>
+            <li class="nav__item"><a href="#aboutUs"> About Us </a></li>
+            <li class="nav__item"><a href="#contacts"> Contact </a></li>
           </ul>
         </div>
         <hr />
-        <div class="footer__social__wrapper">
+        <div id="contacts" class="footer__social__wrapper">
           <a href="#" class="social__link"
             ><img src="./images/footer/instagram.svg" alt="icon"
           /></a>
@@ -429,13 +321,15 @@
       </div>
     </footer>
 
-    <div class="block__loyout">
+    <div class="block__loyout wow animate__slideInRight" data-wow-duration="2s">
       <a href="https://www.figma.com/file/MkaIoNI6SQy5p9EK8dnEdY/Travel-Landing-Page---Free-(Community)-(Copy)?node-id=0%3A1" target="_blank" class="loyout__link">link to loyout</a>
   </div>
 
+    <script src="./js/render.js"></script>
     <script src="./owlcarousel/jQuery-3-6-1.js"></script>
     <script src="./owlcarousel/owl.carousel.min.js"></script>
-    <script src="./js/changeSlide.js"></script>
+    <script src="./js/changeHeaderSlide.js"></script>
+    <script src="./WOWanimate/wow.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
